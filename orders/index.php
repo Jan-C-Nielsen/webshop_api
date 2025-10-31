@@ -67,6 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && !empty($_GET["id"]))
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
    $customer_id =  $_POST["id"];
   // echo  $customer_id;
    $stmt = $conn->prepare("INSERT INTO orders (customer_id) VALUES(:customer_id)");
@@ -81,14 +82,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "PATCH") {
-
-    // if (empty($_GET["id"])) {
-    //     echo "No ID";
-    //     http_response_code(400);
-    //     exit;
-    // }
-
-  //  $id = (int)$_GET["id"];
    
     $id =  validateID("orders");
 

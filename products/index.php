@@ -155,23 +155,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 if ($_SERVER["REQUEST_METHOD"] === "PATCH") {
     header("Content-Type: application/json; charset=utf-8");
-
-    // Require ID
-    // if (empty($_GET["id"])) {
-    //     http_response_code(400);
-    //     echo json_encode(["message" => "Missing 'id' parameter"]);
-    //     exit;
-    // }
-
-    // $id = $_GET["id"];
-
-    // if (!is_numeric($id)) {
-    //     http_response_code(400);
-    //     echo json_encode(["message" => "ID is malformed"]);
-    //     exit;
-    // }
-
-    // $id = intval($id, 10);
     
 	$id = validateID("products");
 
@@ -247,17 +230,8 @@ if ($_SERVER["REQUEST_METHOD"] === "PATCH") {
 
 if ($_SERVER["REQUEST_METHOD"] === "DELETE") {
     header("Content-Type: application/json; charset=utf-8");
-   
-    // Require product ID in query string
+    
 	$id = validateID("products");
-
-    if (!is_numeric($id)) {
-        http_response_code(400);
-        echo json_encode(["message" => "ID must be numeric"]);
-        exit;
-    }
-
-    $id = intval($id, 10);
 
     try {
         // Check if product exists
@@ -273,7 +247,7 @@ if ($_SERVER["REQUEST_METHOD"] === "DELETE") {
         }
 
      
-        // 1Get all linked media IDs
+        // Get all linked media IDs
         $stmt = $conn->prepare("SELECT media_id FROM products_media WHERE products_id = :products_id");
         $stmt->bindParam(":products_id", $id, PDO::PARAM_INT);
         $stmt->execute();
@@ -284,7 +258,7 @@ if ($_SERVER["REQUEST_METHOD"] === "DELETE") {
         $stmt->bindParam(":products_id", $id, PDO::PARAM_INT);
         $stmt->execute();
 
-        // Optionally, delete media entries (only if not linked elsewhere)
+        // Delete media entries, if not linked elsewhere
         if (!empty($media_ids)) {
             $checkStmt = $conn->prepare("SELECT COUNT(*) FROM products_media WHERE media_id = :media_id");
             $deleteStmt = $conn->prepare("DELETE FROM media WHERE id = :media_id");
