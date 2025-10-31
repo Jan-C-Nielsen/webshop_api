@@ -1,0 +1,1667 @@
+{
+	"info": {
+		"_postman_id": "0acadb29-168f-4387-aff9-0f3bde8583a3",
+		"name": "webshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49432599",
+		"_collection_link": "https://bistruphegn-5538239.postman.co/workspace/jan's-Workspace~2ee16ece-8c81-46c8-8a7a-11a60ca71b8f/collection/49432599-0acadb29-168f-4387-aff9-0f3bde8583a3?action=share&source=collection_link&creator=49432599"
+	},
+	"item": [
+		{
+			"name": "orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/webshop/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "orders_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "products_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/webshop/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 15:06:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "236"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 5,\n    \"next\": null,\n    \"prev\": null,\n    \"results\": [\n        {\n            \"id\": 2,\n            \"date\": \"2025-10-27 14:32:54\",\n            \"customer_id\": 2,\n            \"delivered\": \"2025-10-30 15:50:11\",\n            \"url\": \"http://localhost/webshop/orders?id=2\"\n        },\n        {\n            \"id\": 3,\n            \"date\": \"2025-10-27 15:31:51\",\n            \"customer_id\": 1,\n            \"delivered\": null,\n            \"url\": \"http://localhost/webshop/orders?id=3\"\n        },\n        {\n            \"id\": 5,\n            \"date\": \"2025-10-30 12:30:48\",\n            \"customer_id\": 2,\n            \"delivered\": null,\n            \"url\": \"http://localhost/webshop/orders?id=5\"\n        },\n        {\n            \"id\": 6,\n            \"date\": \"2025-10-31 10:45:06\",\n            \"customer_id\": 3,\n            \"delivered\": null,\n            \"url\": \"http://localhost/webshop/orders?id=6\"\n        },\n        {\n            \"id\": 7,\n            \"date\": \"2025-10-31 10:56:02\",\n            \"customer_id\": 1,\n            \"delivered\": null,\n            \"url\": \"http://localhost/webshop/orders?id=7\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "products",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "vanillie kranse",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "småkage",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "weights_in_grams",
+							"value": "200",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webshop/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jødekager 2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Klassisk dansk småkage",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "weights_in_grams",
+									"value": "250",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/webshop/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"products"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:33:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":\"success\",\"product_id\":\"35\"}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "peber-nødder",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webshop/products?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "peber-nødder",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/webshop/products?id=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:36:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "161"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"vanillie kranse\",\n    \"description\": \"småkage\",\n    \"price\": \"6.00\",\n    \"weight\": 200,\n    \"media\": [\n        \"https://mummum.dk/wp-content/uploads/2023/01/4Y7A4130-min.jpg\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "orderId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/webshop/orders?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "orderId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/webshop/orders?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:37:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"date\": \"2025-10-27 14:32:54\",\n    \"customer_id\": 2,\n    \"delivered\": \"2025-10-30 15:50:11\"\n}"
+				}
+			]
+		},
+		{
+			"name": "customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/webshop/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/webshop/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:38:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "172"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 4,\n    \"next\": null,\n    \"prev\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"name\": \"Jan Nielsen\",\n            \"url\": \"http://localhost/webshop/customers?id=1\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Christian\",\n            \"url\": \"http://localhost/webshop/customers?id=2\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Fanny\",\n            \"url\": \"http://localhost/webshop/customers?id=3\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Jenny\",\n            \"url\": \"http://localhost/webshop/customers?id=6\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "customersId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/webshop/customers?id=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "customersId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/webshop/customers?id=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:41:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "82"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6,\n    \"name\": \"Jenny\",\n    \"address\": \"Gadevænget 8\",\n    \"phone\": \"7777\"\n}"
+				}
+			]
+		},
+		{
+			"name": "customersPost",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "John",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "solvej 89",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "44444",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webshop/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "customersPost",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Peter",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "solvej 90",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "44444",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/webshop/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"customers"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:42:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost/webshop/products?id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/webshop/products?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/webshop/products?id=1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/webshop/products?id=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:43:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 20,\n    \"name\": \"Havregrynskager\",\n    \"description\": \"Sprøde\",\n    \"price\": \"14.00\",\n    \"weight\": 150,\n    \"media\": [\n        \"https://xhgnv2ng.photoncache.com/wp-content/uploads/2021/09/DSC_1501.jpg\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Christian",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webshop/customers?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "customer",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Christian",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/webshop/customers?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:48:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "order",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webshop/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/webshop/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"orders"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:49:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "order",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webshop/orders?orders_id=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "orders_id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/webshop/orders?orders_id=9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "orders_id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:57:00 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "orders_products",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/webshop/orders_products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"orders_products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "orders_products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/webshop/orders_products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"orders_products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:57:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "64"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orders_id\": 2,\n        \"products_id\": 1\n    },\n    {\n        \"orders_id\": 3,\n        \"products_id\": 3\n    },\n    {\n        \"orders_id\": 3,\n        \"products_id\": 3\n    },\n    {\n        \"orders_id\": 3,\n        \"products_id\": 5\n    },\n    {\n        \"orders_id\": 3,\n        \"products_id\": 17\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "orders_products",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/webshop/orders_products?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"orders_products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "orders_products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/webshop/orders_products?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"orders_products"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:58:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orders_id\": 3,\n        \"products_id\": 3\n    },\n    {\n        \"orders_id\": 3,\n        \"products_id\": 3\n    },\n    {\n        \"orders_id\": 3,\n        \"products_id\": 5\n    },\n    {\n        \"orders_id\": 3,\n        \"products_id\": 17\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "product",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "vanillie kranse 2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "småkage",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "66",
+							"type": "text"
+						},
+						{
+							"key": "weights_in_grams",
+							"value": "200",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webshop/products?id=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "product",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "vanillie kranse 3",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "småkage",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "66",
+									"type": "text"
+								},
+								{
+									"key": "weights_in_grams",
+									"value": "200",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/webshop/products?id=7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 16:59:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "112"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"name\": \"vanillie kranse 3\",\n    \"description\": \"test småkage\",\n    \"price\": \"66.00\",\n    \"weight_in_grams\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "products",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "vanillie kranse 2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "småkage",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "66",
+							"type": "text"
+						},
+						{
+							"key": "weights_in_grams",
+							"value": "200",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webshop/products?id=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webshop",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "products",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "vanillie kranse 2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "småkage",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "66",
+									"type": "text"
+								},
+								{
+									"key": "weights_in_grams",
+									"value": "200",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/webshop/products?id=34",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"webshop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "34"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 31 Oct 2025 17:00:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.1"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Length",
+							"value": "96"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Product and related media deleted\",\n    \"deleted_product_id\": 34\n}"
+				}
+			]
+		}
+	]
+}
